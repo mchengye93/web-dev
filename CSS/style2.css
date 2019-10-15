@@ -6,3 +6,11 @@
     width: 33px;
     height: 55px;
 }
+
+p {
+    font-size: 12px;
+}
+
+span {
+    font-size: 5em;
+}
