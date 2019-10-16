@@ -1,7 +1,7 @@
 JAVASCRIPT TYPES
 -----------------
 1. Number : - + / % NaN (not a number)
-2. String : + (to connect strings), 'This isn\'t very nice' (\ ignores whatever next)
+2. String : + (to connect strings),'This isn\'t very nice' (\ ignores whatever next)
 3. Boolean
 4. Undefined
 5. Null
