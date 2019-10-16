@@ -19,9 +19,20 @@ body {
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+.box:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
 /***********************************************************************
  *  Nav Bar
  **********************************************************************/
+ .sticky {
+     position: fixed;
+     top:0;
+     width: 100%;
+ }
 .main-nav {
     display: flex;
     list-style: none;
@@ -61,6 +72,9 @@ a {
     justify-content: center;
 }
 
+.cover {
+    width: 30rem;
+}
 /***********************************************************************
  *  Grid Panel
  **********************************************************************/
