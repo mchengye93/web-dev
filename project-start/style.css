@@ -1,8 +1,11 @@
+body {
+    margin: auto 0;
+}
 .zone {
-    padding:30px 50px;
-    margin:40px 60px;
+    /* padding:30px 50px;
+    margin:40px 60px; */
     cursor:pointer;
-    display:inline-block;
+    /* display:inline-block; */
     color:#FFF;
     font-size:2em;
     border-radius:4px;
@@ -24,6 +27,10 @@
     font-size: 0.7em;
     margin: 0;
 }
+.push {
+    margin-left: auto;
+}
+
 li {
     padding: 20px;
 }
