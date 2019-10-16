@@ -1,0 +1,30 @@
+// Create an object and an array which we will use in our facebook exercise. 
+let obj = {};
+let arr = [];
+
+// 1. Create an object that has properties "username" and "password". Fill those values in with strings.
+{username : "Mapo",
+password :"password"
+}
+// 2. Create an array which contains the object you have made above and name the array "database".
+let database = [
+    {
+        username: "Mapo",
+        password: "password
+    }
+];
+// 3. Create an array called "newsfeed" which contains 3 objects with properties "username" and "timeline".
+let newsfeed = [
+    {
+    username: "Him"
+    timeline: "one two three"
+    },
+        {
+    username: "Her"
+    timeline: "I am so cool"
+    },
+    {
+    username: "His"
+    timeline: "Hello World!"
+    }
+]

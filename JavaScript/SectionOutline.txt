@@ -53,8 +53,9 @@ Array -
 shift() - shift first element and return it
 pop() - removes last element from list
 push() - put onto end of list
-concat() - adding to an Array
-
+concat() - adding to an Array , creates a new array with added list
+- Must assign to variable in order to save
+sort() - sorts element in asc order
 Object
 
 JAVASCRIPT LOOPING
