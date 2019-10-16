@@ -20,7 +20,8 @@ JAVASCRIPT COMPARISONS
 
 JAVASCRIPT VARIABLES
 -----------------
-var
+var : Rules: Must start with letter, cannot start with symbol, camel case (firstName)
+prompt("What is username") -> get something from user; let first = prompt("Enter first number");
 <!-- let (new in ECMAScript 6)-->  
 <!-- const (new in ECMAScript 6)-->
 
