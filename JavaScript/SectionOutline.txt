@@ -49,7 +49,12 @@ return
 
 JAVASCRIPT DATA STRUCTURES
 -----------------
-Array
+Array - 
+shift() - shift first element and return it
+pop() - removes last element from list
+push() - put onto end of list
+concat() - adding to an Array
+
 Object
 
 JAVASCRIPT LOOPING
