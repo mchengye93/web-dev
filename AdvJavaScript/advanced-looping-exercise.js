@@ -33,30 +33,37 @@ const array2 = ['a', 3, 4, 2] // should return 4
 const array3 = [] // should return 0
 
 function biggestNumberInArray(arr) {
-  let max = 0;
+  let highest = 0;
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
+    if (highest < arr[i]) {
+      highest = arr[i];
     }
   }
-  return max;
+  return highest
 }
 
 function biggestNumberInArray2(arr) {
-  let max = 0;
-  arr.forEach((num)=> {
-    if (num > max) max = num;
-  });
-  return max;
+  let highest = 0;
+  arr.forEach(item => {
+    if (highest < item) {
+      highest = item;
+    }
+  })
+  return highest;
 }
 
 function biggestNumberInArray3(arr) {
-  let max = 0;
-  for (num of arr) {
-    if (num > max) max = num;
+  let highest = 0;
+  for (item of arr) {
+    if (highest < item) {
+      highest = item;
+    }
   }
-  return max;
+  return highest;
 }
+
+
+biggestNumberInArray3(array3)
 
 
 // Question #2:
@@ -69,7 +76,9 @@ amazonBasket = {
 
 function checkBasket(basket, lookingFor) {
   for (item in basket) {
-    if (item === lookingFor) return true;
+    if (item === lookingFor) {
+      return `${lookingFor} is in your basket`
+    }
   }
-  return false
+  return 'that does not exist in your basket'
 }
