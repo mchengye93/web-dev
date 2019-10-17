@@ -68,5 +68,8 @@ amazonBasket = {
 }
 
 function checkBasket(basket, lookingFor) {
-
+  for (item in basket) {
+    if (item === lookingFor) return true;
+  }
+  return false
 }
