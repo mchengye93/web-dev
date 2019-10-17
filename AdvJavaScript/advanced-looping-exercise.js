@@ -43,11 +43,19 @@ function biggestNumberInArray(arr) {
 }
 
 function biggestNumberInArray2(arr) {
-
+  let max = 0;
+  arr.forEach((num)=> {
+    if (num > max) max = num;
+  });
+  return max;
 }
 
 function biggestNumberInArray3(arr) {
-
+  let max = 0;
+  for (num of arr) {
+    if (num > max) max = num;
+  }
+  return max;
 }
 
 
