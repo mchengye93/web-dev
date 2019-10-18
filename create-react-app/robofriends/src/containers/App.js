@@ -1,8 +1,8 @@
 import React from 'react';
-import {robots} from './robots';
-import CardList from './CardList';
-import SearchBox from './SearchBox';
-
+import {robots} from '../robots';
+import CardList from '../components/CardList';
+import SearchBox from '../components/SearchBox';
+import Scroll from '../components/Scroll';
 class App extends React.Component {
     constructor() {
         super();
@@ -43,7 +43,9 @@ class App extends React.Component {
                 <div className='App tc'>
                 <h1>RoboFriends</h1>
                 <SearchBox handleSearch= {this.handleSearch}/>
+                <Scroll>
                 <CardList robots= {filteredRobots}/>
+                </Scroll>
                 </div>
             )
 
