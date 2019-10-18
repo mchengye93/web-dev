@@ -28,10 +28,13 @@ class App extends React.Component {
 
     }
     render() {
-        let filteredRobots = this.state.robots.filter((robot) => {
-            return robot.name.toLowerCase().includes(this.state.searchField.toLocaleLowerCase());
+        let {robots,searchField} = this.state;
+
+        let filteredRobots = robots.filter((robot) => {
+            return robot.name.toLowerCase().includes(searchField.toLocaleLowerCase());
         })
-        if(this.state.robots.length === 0) {
+
+        if(!robots.length ) {
             return (
                 <div className='App tc'>
                 <h1>RoboFriends</h1>
