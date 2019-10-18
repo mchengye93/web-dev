@@ -3,6 +3,7 @@ import {robots} from '../robots';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import ErrorBoundary from '../components/ErrorBoundary';
 class App extends React.Component {
     constructor() {
         super();
@@ -47,7 +48,9 @@ class App extends React.Component {
                 <h1>RoboFriends</h1>
                 <SearchBox handleSearch= {this.handleSearch}/>
                 <Scroll>
-                <CardList robots= {filteredRobots}/>
+                    <ErrorBoundary>
+                        <CardList robots= {filteredRobots}/>
+                    </ErrorBoundary>
                 </Scroll>
                 </div>
             )
