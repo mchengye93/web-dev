@@ -7,11 +7,17 @@ class App extends React.Component {
     constructor() {
         super();
         this.state = {
-            robots:robots,
+            robots:[],
             searchField:''
 
         }
         this.handleSearch = this.handleSearch.bind(this);
+    }
+    componentDidMount() {
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => response.json())
+        .then(users => this.setState({robots:users}));
+
     }
     handleSearch(e) {
         console.log(e.target.value);
@@ -25,13 +31,24 @@ class App extends React.Component {
         let filteredRobots = this.state.robots.filter((robot) => {
             return robot.name.toLowerCase().includes(this.state.searchField.toLocaleLowerCase());
         })
-        return (
-            <div className='App tc'>
-            <h1>RoboFriends</h1>
-            <SearchBox handleSearch= {this.handleSearch}/>
-            <CardList robots= {filteredRobots}/>
-            </div>
-        )
+        if(this.state.robots.length === 0) {
+            return (
+                <div className='App tc'>
+                <h1>RoboFriends</h1>
+                <p>Loading....</p>
+                </div>
+            )
+        } else {
+            return (
+                <div className='App tc'>
+                <h1>RoboFriends</h1>
+                <SearchBox handleSearch= {this.handleSearch}/>
+                <CardList robots= {filteredRobots}/>
+                </div>
+            )
+
+        }
+       
     }
 }
 
