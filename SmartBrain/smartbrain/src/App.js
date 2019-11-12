@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from './components/Navigation/Nagivation';
 // import Logo from './components/Logo/Logo';
-import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
+// import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import './App.css';
 
 
@@ -19,4 +19,3 @@ function App() {
 }
 
 export default App;
-z
