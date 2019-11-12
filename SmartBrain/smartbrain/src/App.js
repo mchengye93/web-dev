@@ -1,7 +1,8 @@
 import React from 'react';
 import Navigation from './components/Navigation/Nagivation';
 import './App.css';
-
+import 'tachyons';
+import 
 
 function App() {
   return (
